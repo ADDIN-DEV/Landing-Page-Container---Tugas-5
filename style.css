@@ -1,0 +1,128 @@
+body {
+	font-family: sans-serif;	background-color: #151515;
+    background-image: 
+    linear-gradient(90deg, #444 1px, transparent 1px),
+    linear-gradient(#444 1px, transparent 1px);
+    background-size: 100px 100px;
+
+	
+}
+
+.container {
+	display: inline-block;
+	justify-content: center;
+}
+
+.header {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-around;
+	padding: 25px;
+	text-align: center;
+	color: white;
+	align-items: center;
+	align-content: center;
+}
+
+.header p {
+	font-style: bold;
+	color: white;
+	font-size: 35px;
+	align-content: start;
+}
+
+
+.header ul{
+	display: flex;
+	color: #a7a4a4;
+	list-style: none;
+	display: flex;
+	padding: 0;
+	gap: 40px;
+
+}
+
+.header a {
+	text-decoration: none;
+	color: #a7a4a4;
+}
+
+.header a:hover {
+	color: rgb(221, 221, 17);
+}
+
+.hero {
+	box-sizing: border-box;
+	font-family: "Galano Grotesque Alt DEMO Bold";
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	
+}
+
+.info {
+	align-self: center;
+	
+}
+
+.info b {
+	color: rgb(221, 221, 17);
+}
+
+.info h1 {
+	color: white;
+	font-style: bold;
+	font-size: 70px;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.info span {
+	color: rgb(221, 221, 17);
+}
+
+.info p {
+	color: rgb(197, 192, 192);
+}
+
+button {
+	background-color: rgb(221, 221, 17);
+	color: black;
+	border: none;
+	padding: 10px 20px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+img {
+	width: 60%;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header p{
+		font-size: 30px;
+		padding: 0;
+	}
+
+	.hero {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	img {
+		align-self: flex-end
+	};
+}
